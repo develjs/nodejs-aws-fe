@@ -1,3 +1,7 @@
+Task 2 links
+Link to CloudFront website: https://d1cdd75w0a1n44.cloudfront.net/
+Link to S3 Bucket: http://rs-scool-app.s3-website-us-east-1.amazonaws.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
