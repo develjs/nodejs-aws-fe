@@ -44,7 +44,7 @@ export default function ProductsTable() {
         </TableHead>
         <TableBody>
           {products.map((product: any) => (
-            <TableRow key={product.id}>
+            <TableRow key={product.product_id}>
               <TableCell component="th" scope="row">
                 {product.title}
               </TableCell>
@@ -52,10 +52,10 @@ export default function ProductsTable() {
               <TableCell align="right">{formatAsPrice(product.price)}</TableCell>
               <TableCell align="right">{product.count}</TableCell>
               <TableCell align="right">
-                <Button size="small" color="primary" component={Link} to={`/admin/product-form/${product.id}`}>
+                <Button size="small" color="primary" component={Link} to={`/admin/product-form/${product.product_id}`}>
                   Manage
                 </Button>
-                <Button size="small" color="secondary" onClick={() => onDelete(product.id)}>
+                <Button size="small" color="secondary" onClick={() => onDelete(product.product_id)}>
                   Delete
                 </Button>
               </TableCell>
